@@ -17,8 +17,8 @@ li {
 }
 
 p {
-  line-height: 1.5;
-  font-size: 16px;
+  line-height: 1;
+  font-size: 24px;
 }
 
 a {
@@ -30,12 +30,12 @@ button {
 }
 
 section {
-  background-color: rgb(245, 232, 232);
-  transition: all 500ms ease;
+  background-color: rgb(253, 253, 253);
+  transition:all 400ms ease;
 }
 
 input, textarea {
-  width: 50%;
+  width: 100%;
   background-color: #fff6f6;
   color: #141313;
   outline: none;
@@ -274,7 +274,7 @@ nav {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
   height: 150px;
 }
 
@@ -282,14 +282,6 @@ nav {
 #personal-logo {
   width: 200px;
   height: 150px;
-  filter: none;
-  align-items: center;
-  transition: all 700ms ease;
-  position:relative;
-  top: 10%;
-  left: 2%;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -303,13 +295,13 @@ nav {
 }
 
 .nav__link--anchor {
-  font-size: 24px;
+  font-size: 16px;
   color: #030303;
   font-weight: 700;
 }
 
 .fa-adjust {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /* 
@@ -497,31 +489,32 @@ nav {
 */
 
 .section__title {
-  text-align: left;
-  font-size: 48px;
-  margin-bottom: 60px;
+  text-align:right;
+  font-size: 100px;
+  margin-bottom: 100px;
+  font-weight: 800;
 }
 
 .vip {
-  margin-bottom: 135px;
+  margin-bottom: 100px;
 }
 
 .vip__img {
   width: 100%;
-  transition: all 600ms ease;
+  transition: all 400ms ease;
 }
 
 .vip__wrapper {
   position: relative;
-  border-radius: 12px;
-  box-shadow: 0 40px 80px 0 rgba(16, 15, 14, 0.45);
-  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 20px 80px 0 rgba(16, 15, 14, 0.45);
+  overflow:hidden;
 }
 
 
 .vip__wrapper:hover .vip__description {
-  opacity: 1;
-  transform: translateY(-25%);
+  opacity: 4;
+  transform: translateY(-50%);
 }
 
 .vip__wrapper:hover .vip__img {
@@ -531,12 +524,13 @@ nav {
 
 .vip__description {
   position: absolute;
-  top: 25%;
+  align-items: center;
+  top: 50%;
   left: 90px;
   transform: translateY(100%);
   opacity: 0;
-  transition: opacity 300ms, transform 450ms ease;
-  color: white;
+  transition: opacity 200ms, transform 100ms ease;
+  color: #e5c5c5;
   max-width: 550px;
 }
 
@@ -551,14 +545,14 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #9f8a8a;
+  background-color: #e5c5c5;
   opacity: 0; 
-  transition: all 450ms ease;
-  visibility: hidden;
+  transition: all 400ms ease;
+  visibility:hidden;
 }
 
 .vip__description--title {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .vip__description--sub-title {
@@ -566,13 +560,13 @@ nav {
 }
 
 .vip__description--link {
-  color: white;
+  color: #e5c5c5;
   font-size: 20px;
   margin-right: 16px;
 }
 
 .vip__description--para {
-  margin: 16px 0;
+  margin: 12px 0;
 }
 
 /* 
@@ -637,32 +631,32 @@ footer {
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
   .title {
-    font-size: 48px;
+    font-size: 80px;
   }
   .header__para {
-    font-size: 48px;
+    font-size: 20px;
   }
   .modal {
     top: 0;
     left: 0;
     transform: none;
     height: auto;
-    width: 75%;
+    width: 100%;
     flex-direction: column-reverse;
     border-radius: 0;
   }
   .modal__half {
-    width: 75%;
+    width: 100%;
   }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
   .title {
-    font-size: 72px;
+    font-size: 52px;
   }
   .header__para {
-    font-size: 60px;
+    font-size: 18px;
   }
   .nav__link:first-child {
     display: none;
@@ -680,7 +674,7 @@ footer {
     margin-bottom: 8px;
   }
   .modal__half {
-    padding: 30px;
+    padding: 40px;
   }
 }
 
@@ -790,7 +784,7 @@ button {
 /* HEADER / ABOUT US */
 
 section {
-  padding: 0 60px;
+  padding: 0 24px;
 }
 header .row {
   display: flex;
@@ -798,14 +792,14 @@ header .row {
   justify-content: space-between;
 }
 .header__description {
-  width: 50%;
+  width: 59%;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .header__description--para {
   margin: 24px 0;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 54x;
+  font-weight: 800;
 }
 .header__email {
   width: 100%;

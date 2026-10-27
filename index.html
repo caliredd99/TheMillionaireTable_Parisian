@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Millionaire Table: A Parisian Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/IMG_6582.png" type="image/personal-logo">
+  <script src="https://kit.fontawesome.com/f0a5cdb1aa.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function() {
+      emailjs.init({
+        publicKey: "iT0-zpw96gfsJ7-Rj",
+      });
+   })();
+</script>
+</head>
+
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/MILLION DOLLAR.png" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#vip" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">VIP</a>
+        </li>
+        <li class="nav__link">
+          <a href="https://www.eventbrite.com/e/the-millionaire-table-a-parisian-experience-tickets-791187091657" target="_blank" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Tickets</a>
+        <li class="nav__link">
+          <a href="./assets/Sparkle Henderson_updated.pdf" target="_blank" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Donations</a>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
+                Millionaire.
+                <br>
+                <span class="orange">You are Invited</span>
+              </h1>
+              <p class="header__description--para">
+              to a <b class="orange">Parisian </b> Experience at <b class="orange">The Millionaire Table</b> where people who are passionate about their community and want to make a difference get connected.
+               </p>
+              <div class="social__list">
+          <a href="https://www.linkedin.com/in/sparkle-henderson-7bb539374" target="_blank" class="social__link click">
+            <img src="./assets/Luxury Golden Ticket Duo.png" class="social__link--img"/>
+          </a>
+        </div>   
+            </div>
+            <figure class="header__img--wrapper">
+              <img
+                src="./assets/IMG_6583.png"
+                class="header__img"
+              />
+            </figure>
+          </div>
+        </div>
+      </header>
+       <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#modal" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+                <h2 class="modal__title modal__title--about">The Millionaire Table</h2>
+        <h3 class="modal__sub-title modal__sub-title--about"> A Parisian Experience.</h3>
+        <p class="modal__para">
+          Prepare for an <b class="orange">Extraordinary Evening </b> Experience an elegant Parisian-inspired atmosphere featuring powerful speakers, elevated networking, business showcases, and meaningful conversations designed to inspire your
+ <b class="orange">NEXT</b> <b class="orange">LEVEL</b>.
+          <br>
+          <br>
+          With two <b class="orange">$5,0000</b> <b class="orange">SCHOLARSHIPS</b> and opportunities to connect with entrepreneurs and professionals, this is more than an evening out—it's an opportunity to expand your network, elevate your perspective, and experience something unforgettable.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="assets/MILLION DOLLAR.png"
+              alt="">
+          </figure>
+          
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+        Have a question? 
+        </h3>
+        <h4 class="modal__sub-title modal__sub-title--contact">
+          Currently Accepting Donations.
+        </h4>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Phone Number</label>
+            <input class="input" name="user_phone" type="number" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it!
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! We look forward to speaking to you soon.
+        </div>
+      </div>
+      
+    </div>
+   
+  </section>
+  <section id="vip">
+    <div class="container">
+      <div class="row">
+        <h1 class="section">
+          Take a look at the <span class="orange"> VIP Experience</span>
+        </h1>
+        <br>
+          <br>
+        <ul class="vip__list">
+          <li class="vip">
+            <div class="vip__wrapper">
+              <img src="./assets/Paris_Awards_1920x1080.png" class="vip__img" alt="">
+              <div class="vip__wrapper--bg"></div>
+              <div class="vip__description">
+                <h3 class="vip__description--title">
+                  AWARD CEREMONY
+                </h3>
+                <h4 class="vip__description--sub-title">
+                  SCHOLARSHIP DONORS AND VIP ATTENDEES
+                </h4>
+                <p class="vip__description--para">
+                  An Evening of Honor, Elegance & Lasting Impact ✨🏆
+
+                Join us for an extraordinary Parisian-inspired celebration honoring the generosity of scholarship donors and the distinguished business and community leaders who inspire excellence.
+
+                Together, we celebrate those whose vision, leadership, and unwavering commitment to giving back are transforming lives, opening doors to educational opportunities, and empowering future generations to achieve greatness.
+
+                Your presence represents more than support—it symbolizes a shared commitment to building stronger communities, creating lasting legacies, and making dreams possible.
+
+              <h4 class="vip__description--sub-title">
+                🥂 Celebrating Generosity. Honoring Excellence. Inspiring Generations.
+              </h4>
+                </p>
+                
+              </div>
+            </div>
+          </li>
+          <li class="vip">
+            <div class="vip__wrapper">
+              <img src="./assets/Million_Dollar_Table_1920x1080.png" class="vip__img" alt="">
+              <div class="vip__wrapper--bg"></div>
+              <div class="vip__description">
+                <h4 class="vip__description--title">
+                  THE MILLIONAIRE SHOWCASE
+                </h4>
+                <h4 class="vip__description--sub-title">
+                  VIP BUSINESS SHOWCASE
+                </h4>
+                <p class="vip__description--para">
+                 VIP Business Showcase – A Parisian Experience ✨🥂
+
+                Where Elegance Meets Opportunity!
+
+                Step into an exclusive evening of Parisian luxury, where business, influence, and opportunity come together. Discover exceptional brands, connect with influential entrepreneurs and community leaders, and build meaningful relationships in an unforgettable VIP atmosphere.
+
+                Don't just attend the gala—be part of an experience that could elevate your future!
+
+                <h4 class="vip__description--sub-title">
+                  🥂 Be Seen. Be Inspired. Get Connected.
+                </h4>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="vip">
+            <div class="vip__wrapper">
+              <img src="./assets/Parisian_Gala_1920x1080.png" class="vip__img" alt="">
+              <div class="vip__wrapper--bg"></div>
+              <div class="vip__description">
+                <h3 class="vip__description--title">
+                 PARISIAN ELEGANCE 
+                </h3>
+                <h4 class="vip__description--sub-title">
+                  An Evening of Parisian Elegance & Excellence ✨🥂
+                </h4>
+                <p class="vip__description--para">
+                Step into a world of Parisian elegance, where sophistication meets celebration. Join distinguished business and community leaders for an unforgettable evening of luxury, meaningful connections, exquisite entertainment, and inspiring recognition.
+                Against a breathtaking Parisian backdrop, we’ll celebrate leadership, achievement, and the power of community while creating memories that last a lifetime.
+
+                <h4 class="vip__description--sub-title">
+                  One Night. Endless Connections. An Unforgettable Experience.
+                </h4>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/MILLION DOLLAR.png" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/caliredd99" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Tickets
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="#vip" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            VIP
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2026 The Millionaire Table</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -279,8 +279,8 @@ nav {
 
 
 #personal-logo {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 80px;
 }
 
 
@@ -296,7 +296,7 @@ nav {
 .nav__link--anchor {
   font-size: 16px;
   color: #030303;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .fa-adjust {
@@ -522,11 +522,11 @@ nav {
 
 .vip__description {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 90px;
   transform: translateY(100%);
   opacity: 0;
-  transition: opacity 300ms, transform 450ms ease;
+  transition: opacity 200ms, transform 250ms ease;
   color: #e5c5c5;
   max-width: 550px;
 }
@@ -544,7 +544,7 @@ nav {
   height: 100%;
   background-color: #e5c5c5;
   opacity: 0; 
-  transition: all 450ms ease;
+  transition: all 200ms ease;
   visibility:hidden;
 }
 

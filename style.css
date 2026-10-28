@@ -270,7 +270,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 115%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
@@ -279,7 +279,7 @@ nav {
 
 
 #personal-logo {
-  width: 75px;
+  width: 100px;
   height: 80px;
 }
 
